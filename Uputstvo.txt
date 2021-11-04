@@ -1,0 +1,29 @@
+Ovako, izgleda da ova free verzija za VMWare player ne podrzava copy-paste. 
+Po meni je najlakse resenje je da se SSH-ujete na tu masinu.
+Nije ovo nista specijalno, kada budemo radili sa Zybom cemo se SSH-ovati 
+na njega tako da mozda i bolje da se odmah navikavate na to.
+
+
+Prvo se treba podesiti par stvari u VMWare-u kako bi se mogli ssh-ovati:
+1) Pod player -> manage -> virtual machine settings -> network adapter
+	Za network connection selektovati "bridged"
+2) Ukucati sledece komande pod virtuelnom masinom:
+	sudo apt install net-tools
+	sudo apt install openssh-server
+	sudo reboot
+3) Kako biste saznali IP adresu ukucate:
+	ifconfig
+Prikazace se IP adresa tipa 192.168.X.X
+
+
+4) Instalirajte pod windowsom PuTTY
+	https://www.putty.org/
+
+
+Sada kada god zelite da se SSH-ujete na Virtuelnu masinu pokrenete putty.
+I pod tabom 'SSH' ukucate tu IP adresu koju ste procitali pod virtuelnom masinom i connect.
+
+Sada bi trebalo da mozete da resize-ujete window, kao i da kopirate stvari desnim klikom na PuttY prozor.
+
+
+
